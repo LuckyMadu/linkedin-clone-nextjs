@@ -21,8 +21,35 @@ const Home = () => {
             <HeaderLink Icon={OndemandVideoSharpIcon} text="Learning" />
             <HeaderLink Icon={BusinessCenterIcon} text="Jobs" />
           </div>
+          <div className="pl-4">
+            <button className="text-blue-600 font-semibold rounded-full border border-blue-900 px-5 py-1.5 transition-all hover:border-1">
+              Sign In
+            </button>
+          </div>
         </div>
       </header>
+
+      <main className="flex flex-col xl:flex-row items-center max-w-screen-lg mx-auto">
+        <div className="space-x-6 xl:space-y-10">
+          <h1 className="text-3xl md:text-5xl text-amber-800/80 max-w-xl !leading-snug pl-4 xl:pl-0">
+            Welcome to your professional community
+          </h1>
+          <div className="space-y-4">
+            <div className="intent">
+              <h2 className="text-xl">Search for a job</h2>
+              <ArrowForwardIosRoundedIcon className="text-gray-700" />
+            </div>
+            <div className="intent">
+              <h2 className="text-xl">Find a person</h2>
+              <ArrowForwardIosRoundedIcon className="text-gray-700" />
+            </div>
+            <div className="intent">
+              <h2 className="text-xl">Learn a new skill</h2>
+              <ArrowForwardIosRoundedIcon className="text-gray-700" />
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   );
 };

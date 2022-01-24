@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
+import Head from "next/head";
 import Image from "next/image";
 import HeaderLink from "../components/HeaderLink";
 import ExploreIcon from "@mui/icons-material/Explore";
@@ -9,7 +10,11 @@ import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRound
 
 const Home = () => {
   return (
-    <div>
+    <div className="space-y-10 relative">
+      <Head>
+        <title>LinkedIn</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <header className="flex justify-around items-center py-4">
         <div className="relative w-36 h-10">
           <Image src="https://rb.gy/vtbzlp" layout="fill" objectFit="contain" />
@@ -48,6 +53,10 @@ const Home = () => {
               <ArrowForwardIosRoundedIcon className="text-gray-700" />
             </div>
           </div>
+        </div>
+
+        <div className="relative xl:absolute w-80 h-80 xl:w-[650px] xl:h-[650px] top-14 right-5">
+          <Image src="https://rb.gy/vkzpzt" layout="fill" priority />
         </div>
       </main>
     </div>
